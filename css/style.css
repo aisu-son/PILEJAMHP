@@ -22,6 +22,17 @@ body{
 	background: #000;
 }
 
+#mainImg {
+    text-align: center; /* 画像を中央揃え */
+}
+
+#mainImg img {
+    width: 100%; /* 画面幅に合わせる */
+    height: auto; /* 縦横比を維持 */
+    object-fit: cover; /* 画像が切れにくくなる */
+    max-height: 80vh; /* 画面の80%の高さまでに制限 */
+}
+
 a{
 	color: #0066ff;
 	text-decoration: none;
