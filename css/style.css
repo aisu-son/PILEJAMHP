@@ -98,8 +98,12 @@ section h2 span::after {
 }
 
 .innerS {
-    display: flex;
-    justify-content: center; /* 横方向の中央揃え */
+    text-align: center;  /* テキストを中央揃え */
+    display: flex;       /* フレックスボックスを使う */
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center;  /* 垂直方向の中央揃え（必要なら） */
+    width: 100%;         /* 親要素の幅いっぱいに広げる */
+    margin: 0 auto;
 }
 
 #sec03 .inner, #sec04 .inner{
