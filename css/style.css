@@ -22,15 +22,18 @@ body{
 	background: #000;
 }
 
+#content {
+    padding-top: 60px; /* メニューバーの高さ分だけ余白を作る */
+}
+
 #mainImg {
-    text-align: center; /* 画像を中央揃え */
+    text-align: center;
 }
 
 #mainImg img {
-    width: 100%; /* 画面幅に合わせる */
-    height: auto; /* 縦横比を維持 */
-    object-fit: cover; /* 画像が切れにくくなる */
-    max-height: 80vh; /* 画面の80%の高さまでに制限 */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 a{
