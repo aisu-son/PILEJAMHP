@@ -83,6 +83,11 @@ section h2 span::after {
 	padding-bottom: 50px;
 }
 
+.innerS {
+    display: flex;
+    justify-content: center; /* 横方向の中央揃え */
+}
+
 #sec03 .inner, #sec04 .inner{
 	border-bottom: 1px solid #fff;
 }
@@ -127,10 +132,9 @@ section h2 span::after {
 }
 
 .video-title {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
+    display: block;
+    margin-bottom: 10px; /* タイトルと動画の間に余白を作る */
+    text-align: center;
     color: #fff;
 }
 
