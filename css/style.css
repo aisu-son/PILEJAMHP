@@ -1,0 +1,375 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Modern+Antiqua);
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img,abbr,acronym,fieldset{border:0;}
+
+body{
+	font: 20px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+	font-weight: 300;
+	-webkit-text-size-adjust:100%;
+	overflow-x: hidden;
+	color: #fff;
+	background: #000;
+}
+
+a{
+	color: #0066ff;
+	text-decoration: none;
+}
+
+a:hover, .active{
+    text-decoration: underline;
+}
+
+a:active, a:focus,input:active, input:focus{outline:0;}
+
+/* ヘッダー　*/
+
+#mainnav a{
+	color: #fff;
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+h1, h2{
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+section{
+    clear: both;
+}
+
+section h2{
+	width: 60%;
+	margin: 70px auto;
+	font-size: 32px;
+	font-weight:normal;
+	text-align: center;
+}
+
+section h2 span {
+	padding-bottom: 20px;
+	border-bottom: 3px solid #fff;
+}
+
+section h2 span::after {
+    content: ''; /* 擬似要素に内容は設定しない */
+    position: absolute;
+    left: 0;
+    bottom: 3px; /* ボーダーの下に影を配置 */
+    width: 100%;
+    height: 0; /* 影の高さ */
+    background: rgba(165, 165, 165, 0.5); /* 影の色（黒っぽい影） */
+    box-shadow: 0 4px 6px rgba(112, 112, 112, 0.3); /* 影のぼかし具合 */
+}
+
+.inner{
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+#sec03 .inner, #sec04 .inner{
+	border-bottom: 1px solid #fff;
+}
+
+/* SEC02 */
+
+#sec02{
+    padding: 0 !important;
+}
+
+#SONGS {
+    overflow: hidden;
+}
+
+#SONGS li{
+    float: left;
+    width: calc(100%/3);
+    line-height: 3px;
+}
+
+#SONGS li.full{
+    width: 100%;
+}
+
+#SONGS img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*SEC03*/
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.video-item {
+    position: relative;
+}
+
+.video-title {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+/*SEC04*/
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #000000;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #5a5a5a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #636262;
+}
+
+@media only screen and (min-width: 800px){
+    body{
+        font-size: 20px;
+    }
+
+    #wrapper{
+		width: 100%;
+	}
+
+    #content{
+		width: 80%;
+	}
+
+    #sidebar{
+		width: 12%;
+		position: fixed;
+		top: 0;
+		right: 4%;
+		background: #000;
+	}
+
+    a#menu{
+		display:none;
+	}
+
+    .panel{
+		display:block !important;
+	}
+
+    #sidebar h1{
+		padding: 30px 0;
+	}
+
+    #mainnav li{
+		font-size: 20px;
+		padding: 10px 0;
+	}
+
+    #sns{
+		margin-top: 50px;
+	}
+
+    #sns li{
+		display: inline-block;
+		padding-right: 10px;
+	}
+
+    #sns a:hover img{
+		opacity: .8;
+	}
+}
+
+@media only screen and (min-width:640px){
+    .innerS{
+        width: 94%;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 799px){
+    #sidebar{
+        position: fixed;
+        width: 100%;
+        z-index: 500;
+    }
+
+    #sidebarWrap{
+        position: relative;
+        width: 100%;
+        height: 60px;
+        background: #000;
+        border-bottom: 1px solid #333;
+    }
+
+    #sidebar h1{
+		text-align: center;
+		padding-top: 15px;
+	}
+
+    #sidebar h1 img{
+		width: auto !important;
+		max-height: 25px;
+	}
+
+    a#menu{
+        display: inline-block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+
+    #menuBtn{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 18px;
+        height: 2px;
+        margin: -1px 0 0 -7px;
+        background: #fff;
+        transition: .2s;
+    }
+    #menuBtn:before, #menuBtn:after{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 18px;
+        height: 2px;
+        background: #fff;
+        transition: .3s;
+    }
+    #menuBtn:before{
+        margin-top: -7px;
+    }
+    #menuBtn:after{
+        margin-top: 5px;
+    }
+    a#menu .close{
+        background: transparent;
+    }
+    a#menu .close:before, a#menu .close:after{
+        margin-top: 0;
+    }
+    a#menu .close:before{
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    a#menu .close:after{
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+    }
+    .panel{
+		width: 100%;
+		display: none;
+		overflow: hidden;
+		position: relative;
+		left: 0;
+		top: -10px;
+		z-index: 100;
+	}
+    #mainnav{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		text-align: right;
+	}
+    #mainnav ul{
+		border-bottom: 1px solid #ccc;
+		background: #000;
+		text-align: left;
+	}
+    #mainnav li a{
+		position: relative;
+		display: block;
+		padding: 15px 25px;
+		border-bottom: 1px solid #ccc;
+		color: #fff;
+		font-weight: 400;
+	}
+    #mainnav li a:before{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		width: 6px;
+		height: 6px;
+		margin: -4px 0 0 0;
+		border-top: solid 2px #fff;
+		border-right: solid 2px #fff;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+    #mainnav #sns li{
+		display: inline-block;
+	}
+    #mainnav #sns li a{
+		position: relative;
+		display: inline-block;
+		padding: 15px 10px 0;
+		border: 0;
+	}
+    #mainnav #sns li a:before{
+		border: 0;
+	}
+    .col4 li{
+		margin: 0 auto 50px;
+		display: block;
+		text-align: center;
+	}
+    section h2{
+		margin: 55px auto;
+	}
+}
